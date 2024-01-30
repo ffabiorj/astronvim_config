@@ -11,9 +11,14 @@ return {
     -- Moving like vscode
     ["<A-j>"] = {":m .+1<CR>=="},
     ["<A-k>"] = {":m .-2<CR>=="},
-    -- kept the cursour in the middle
+    -- kept the cursour in the middle and search as well
     ["<C-d>"] =  {"<C-d>zz"},
     ["<C-u>"] = {"<C-u>zz"},
+    ["n"] = {"nzzzv"},
+    ["N"] = {"nzzzv"},
+    -- copy clipboard
+    ["<leader>y"] = {"\"+y"},
+    ["<leader>Y"] = {"\"+y"},
     -- movie buffers 
     ["<S-h>"] = { ":bprevious<cr>"},
     ["<S-l>"] = { ":bnext<cr>"},
@@ -38,6 +43,8 @@ return {
         -- Better indenting
     ["<"] = {"<gv"},
     [">"] = {">gv"},
+    -- copy clipboard
+    ["<leader>y"] = {"\"+y"},
   },
   i = {
    -- Move current line / block with Alt-j/k ala vscode.
